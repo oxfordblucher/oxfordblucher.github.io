@@ -35,3 +35,12 @@ body {
 h1 {
     font-weight: bolder;
 }
+
+#links {
+    margin-bottom: 30px;
+}
+
+figcaption {
+    font-weight: bold;
+    color: royalblue;
+}
