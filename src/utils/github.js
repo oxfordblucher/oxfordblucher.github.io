@@ -1,6 +1,6 @@
 import { Octokit } from '@octokit/core';
 
-const octokit = new Octokit({auth:'685c01d24c82827f9d8799254a499a68ff327955'});
+const octokit = new Octokit({auth:'54b06da3d5973a44d2dd8734122df8af4be16383'});
 
 export default {
     getProjects: () => {
