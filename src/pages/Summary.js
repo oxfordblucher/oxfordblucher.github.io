@@ -1,14 +1,35 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import photo from '../assets/personal_photo.jpg';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Figure from 'react-bootstrap/Figure';
-import Card from 'react-bootstrap/Card';
 import './Summary.css';
-import { Carousel } from 'react-bootstrap';
+import Carousel from 'react-bootstrap/Carousel';
+import Modal from 'react-bootstrap/Modal';
 
 const Summary = () => {
+    const [age, setAge] = useState(0);
+    const [show, setShow] = useState(false);/* 
+    const [project, setProject] = useState(''); */
+
+    const handleClose = () => setShow(false);
+    const handleShow = (project) => {
+        setShow(true);
+        /* setProject(project); */
+    }
+
+    useEffect(() => {
+        const ageNum = parseInt(new Date().value.getFullYear() - 1994);
+        console.log(ageNum);
+        /* if (Date.now().getMonth() + 1 < 10) {
+            ageNum --;
+        } */
+        /* setAge(ageNum); */
+    }, []);
+
+    
+
     return (
         <Container fluid>
             <Row className='justify-content-center'>
@@ -18,7 +39,7 @@ const Summary = () => {
                 <Col med={12} lg={4} className='text-center'>
                     <h1>About Me</h1>
                     <p>
-                        I am a <span id="age">26</span> year old burgeoning software developer currently in Philadelphia, PA specializing in the MERN stack but always picking up more along the way!
+                        I am a {age} year old burgeoning software developer currently in Philadelphia, PA specializing in the MERN stack but always picking up more along the way!
                     </p>
                     <p>
                         I've been a tinkerer from my preschool legos to zoob in middle school to my desktop computer and commuter bike today. While I've always worked with my hands, I am confident in my problem solving and am ready for the next adventure.
@@ -53,6 +74,7 @@ const Summary = () => {
                         className='d-block w-100'
                         src='https://github.com/oxfordblucher/BikeAble/raw/master/client/src/assets/screenshot.png?raw=true'
                         alt='BikeAble screenshot'
+                        onClick={()=>handleShow('BikeAble')}
                     />
                     <Carousel.Caption>
                         <h3>BikeAble</h3>
@@ -69,6 +91,7 @@ const Summary = () => {
                         className='d-block w-100'
                         src='https://github.com/oxfordblucher/Personality-Pups/raw/master/app/public/assets/img/screenshot.png'
                         alt='Personality Pups screenshot'
+                        onClick={()=>handleShow('Personality Pups')}
                     />
                     <Carousel.Caption>
                         <h3>Personality Pups</h3>
@@ -85,6 +108,7 @@ const Summary = () => {
                         className='d-block w-100'
                         src='https://github.com/oxfordblucher/Restaurant-Roulette/raw/main/screenshots/sample_results.png'
                         alt='UMEWE screenshot'
+                        onClick={()=>handleShow('UMEWE')}
                     />
                     <Carousel.Caption>
                         <h3>UMEWE</h3>
@@ -97,6 +121,12 @@ const Summary = () => {
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
+
+            {/* <Modal show={show} onHide={handleClose()}>
+                <Modal.Header closeButton>
+                    <Modal.Title></Modal.Title>
+                </Modal.Header>
+            </Modal> */}
             {/* <Card.Link href='https://bike-able.herokuapp.com'>Deployed</Card.Link>
                         <Card.Link href='https://github.com/oxfordblucher/BikeAble'>Repo</Card.Link>
                 
