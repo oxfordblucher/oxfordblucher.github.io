@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "https://oxfordblucher.github.io",
   "dependencies": {
     "@octokit/core": "^3.2.5",
