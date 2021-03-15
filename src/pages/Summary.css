@@ -1,24 +1,18 @@
-.card-img-overlay {
-    opacity: 0;
-    background-color: mediumspringgreen;
-    color: blue;
-    text-align: center;
+.carousel-caption p, .carousel-caption h3 {
+    color: black;
 }
 
-.card:hover .card-img-overlay {
-    opacity: 1;
+div.carousel-caption {
+    position: relative;
+    left: 0;
 }
 
-div.col-lg-6 img{
-    max-height: 500px;
-    width: auto;
-    height: auto;
+.carousel-item img {
+    max-width: 1400px;
+    margin: auto;
+    padding-bottom: 20px;
 }
 
-div.col-lg-6 {
-    margin-bottom: 5px;
-}
-
-div.col-lg-6 h2 {
-    text-align: center;
+h4.text-center {
+    margin-bottom: 20px;
 }

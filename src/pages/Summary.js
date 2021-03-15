@@ -6,6 +6,7 @@ import Col from 'react-bootstrap/Col';
 import Figure from 'react-bootstrap/Figure';
 import Card from 'react-bootstrap/Card';
 import './Summary.css';
+import { Carousel } from 'react-bootstrap';
 
 const Summary = () => {
     return (
@@ -23,79 +24,92 @@ const Summary = () => {
                         I've been a tinkerer from my preschool legos to zoob in middle school to my desktop computer and commuter bike today. While I've always worked with my hands, I am confident in my problem solving and am ready for the next adventure.
                     </p>
                     <h3 className='mb-3'>My Links:</h3>
-                        <Row>
-                            <Col>
-                                <a href='mailto:hiuchanhk@gmail.com'><i class='far fa-envelope' style={{ 'font-size': '48px' }}></i></a>
-                                <p>Email</p>
-                            </Col>
-                            <Col>
-                                <a href='https://www.github.com/oxfordblucher' target='_blank' rel='noreferrer'><i class='fab fa-github' style={{ 'font-size': '48px' }} /></a>
-                                <p>Github</p>
-                            </Col>
-                            <Col>
-                                <a href='https://www.linkedin.com/in/hiu-chan-37b116114' target='_blank' rel='noreferrer'><i class='fab fa-linkedin' style={{ 'font-size': '48px' }} /></a>
-                                <p>LinkedIn</p>    
-                            </Col>
-                            <Col>
-                                <a href='https://docs.google.com/document/d/1xWioPgge6F38XN11XvWhQMmDjfyxrKpTllZCe50FaeE/edit?usp=sharing' target='_blank' rel='noreferrer'><i class='far fa-file' style={{ 'font-size': '48px' }} /></a>
-                                <p>Résumé</p>
-                            </Col>
-                        </Row>
+                    <Row>
+                        <Col>
+                            <a href='mailto:hiuchanhk@gmail.com'><i class='far fa-envelope' style={{ 'font-size': '48px' }}></i></a>
+                            <p>Email</p>
+                        </Col>
+                        <Col>
+                            <a href='https://www.github.com/oxfordblucher' target='_blank' rel='noreferrer'><i class='fab fa-github' style={{ 'font-size': '48px' }} /></a>
+                            <p>Github</p>
+                        </Col>
+                        <Col>
+                            <a href='https://www.linkedin.com/in/hiu-chan-37b116114' target='_blank' rel='noreferrer'><i class='fab fa-linkedin' style={{ 'font-size': '48px' }} /></a>
+                            <p>LinkedIn</p>
+                        </Col>
+                        <Col>
+                            <a href='https://docs.google.com/document/d/1xWioPgge6F38XN11XvWhQMmDjfyxrKpTllZCe50FaeE/edit?usp=sharing' target='_blank' rel='noreferrer'><i class='far fa-file' style={{ 'font-size': '48px' }} /></a>
+                            <p>Résumé</p>
+                        </Col>
+                    </Row>
                 </Col>
             </Row>
             <br />
             <h1 className='text-center'>Recent Projects</h1>
             <h4 className='text-center'>A few examples of projects I am fond of</h4>
-            <div className='d-flex align-content-stretch flex-wrap'>
-                <Card className='col-lg-6'>
-                    <Card.Img src='https://github.com/oxfordblucher/BikeAble/raw/master/client/src/assets/screenshot.png?raw=true' alt='Application dashboard featuring mapping features'/>
-                    <Card.ImgOverlay>
-                        <Card.Title>BikeAble</Card.Title>
-                        <Card.Text>
-                            <p className='app-summary'>
-                                Prototype social media site geared towards hobbyist cyclists. Users can map and save routes of their own design, keep abreast of biking-related incidents in their area, and connect with other local users.
-                            </p>
-                            <p className='app-contrib'>
-                                I was team lead; taking charge of overall product design, mapping implementation, and backend logic and security.
-                            </p>
-                        </Card.Text>
-                        <Card.Link href='https://bike-able.herokuapp.com'>Deployed</Card.Link>
+            <Carousel>
+                <Carousel.Item interval={5000}>
+                    <img
+                        className='d-block w-100'
+                        src='https://github.com/oxfordblucher/BikeAble/raw/master/client/src/assets/screenshot.png?raw=true'
+                        alt='BikeAble screenshot'
+                    />
+                    <Carousel.Caption>
+                        <h3>BikeAble</h3>
+                        <p className='app-summary'>
+                            Prototype social media site geared towards hobbyist cyclists. Users can map and save routes of their own design, keep abreast of biking-related incidents in their area, and connect with other local users.
+                        </p>
+                        <p className='app-contrib'>
+                            I was team lead; taking charge of overall product design, mapping implementation, and backend logic and security.
+                        </p>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item interval={5000}>
+                    <img
+                        className='d-block w-100'
+                        src='https://github.com/oxfordblucher/Personality-Pups/raw/master/app/public/assets/img/screenshot.png'
+                        alt='Personality Pups screenshot'
+                    />
+                    <Carousel.Caption>
+                        <h3>Personality Pups</h3>
+                        <p className='app-summary'>
+                            A personality quiz that matches the user up with certain breeds of dogs. Upon creating an account, the website returns and saves the user's results.
+                        </p>
+                        <p className='app-contrib'>
+                            I created the algorithm behind the quiz and was in charge of backend logic and security along with some UX elements.
+                        </p>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item interval={5000}>
+                    <img
+                        className='d-block w-100'
+                        src='https://github.com/oxfordblucher/Restaurant-Roulette/raw/main/screenshots/sample_results.png'
+                        alt='UMEWE screenshot'
+                    />
+                    <Carousel.Caption>
+                        <h3>UMEWE</h3>
+                        <p className='app-summary'>
+                            A restaurant locator based on the midpoint of 2 locations. Intended for users wishing to meet up at a mutually convenient location; they can also filter by price and distance from said midpoint.
+                        </p>
+                        <p className='app-contrib'>
+                            I was in charge of the routing and search result features, focusing primarily on the application logic.
+                        </p>
+                    </Carousel.Caption>
+                </Carousel.Item>
+            </Carousel>
+            {/* <Card.Link href='https://bike-able.herokuapp.com'>Deployed</Card.Link>
                         <Card.Link href='https://github.com/oxfordblucher/BikeAble'>Repo</Card.Link>
-                    </Card.ImgOverlay>
-                </Card>
-                <Card className='col-lg-6'>
-                    <Card.Img src='https://github.com/oxfordblucher/Personality-Pups/raw/master/app/public/assets/img/screenshot.png' alt='Sample quiz question'/>
-                    <Card.ImgOverlay>
-                        <Card.Title>Personality Pups</Card.Title>
-                        <Card.Text>
-                            <p className='app-summary'>
-                                A personality quiz that matches the user up with certain breeds of dogs. Upon creating an account, the website returns and saves the user's results.
-                            </p>
-                            <p className='app-contrib'>
-                                I created the algorithm behind the quiz and was in charge of backend logic and security along with some UX elements.
-                            </p>
+                
+                        <Card.Link href='https://personality-pups.herokuapp.com'>Deployed</Card.Link>
+                        <Card.Link href='https://github.com/oxfordblucher/Personality-Pups'>Repo</Card.Link>
+                 
+                            
                         </Card.Text>
                         <Card.Link href='https://personality-pups.herokuapp.com'>Deployed</Card.Link>
                         <Card.Link href='https://github.com/oxfordblucher/Personality-Pups'>Repo</Card.Link>
                     </Card.ImgOverlay>
                 </Card>
-                <Card className='col-lg-6'>
-                    <Card.Img variant='top' src='https://github.com/oxfordblucher/Restaurant-Roulette/raw/main/screenshots/sample_results.png' alt='Sample results page'/>
-                    <Card.ImgOverlay>
-                        <Card.Title>UMEWE</Card.Title>
-                        <Card.Text>
-                            <p className='app-summary'>
-                                A restaurant locator based on the midpoint of 2 locations. Intended for users wishing to meet up at a mutually convenient location; they can also filter by price and distance from said midpoint.
-                            </p>
-                            <p className='app-contrib'>
-                                I was in charge of the routing and search result features, focusing primarily on the application logic.
-                            </p>
-                        </Card.Text>
-                        <Card.Link href='https://personality-pups.herokuapp.com'>Deployed</Card.Link>
-                        <Card.Link href='https://github.com/oxfordblucher/Personality-Pups'>Repo</Card.Link>
-                    </Card.ImgOverlay>
-                </Card>
-            </div>
+            </div> */}
         </Container>
     )
 }

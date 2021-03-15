@@ -4,7 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 const Header = () => {
 
     return (
-        <Navbar bg='light' expand='lg'>
+        <Navbar bg='dark' variant='dark'>
             <Navbar.Brand href='/'>Hiu Chan</Navbar.Brand>
         </Navbar>
     )
