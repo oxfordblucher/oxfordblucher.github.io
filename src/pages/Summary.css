@@ -1,0 +1,24 @@
+.card-img-overlay {
+    opacity: 0;
+    background-color: mediumspringgreen;
+    color: blue;
+    text-align: center;
+}
+
+.card:hover .card-img-overlay {
+    opacity: 1;
+}
+
+div.col-lg-6 img{
+    max-height: 500px;
+    width: auto;
+    height: auto;
+}
+
+div.col-lg-6 {
+    margin-bottom: 5px;
+}
+
+div.col-lg-6 h2 {
+    text-align: center;
+}
