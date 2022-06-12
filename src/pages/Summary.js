@@ -157,10 +157,10 @@ const Summary = () => {
                 <Col med={12} lg={4} className='text-center'>
                     <h1>About Me</h1>
                     <p>
-                        I am a {age} year old burgeoning software developer currently in Philadelphia, PA specializing in the MERN stack but always picking up more along the way!
+                        Motivated full stack software engineer with a passion for delivering efficient, well-documented code and user friendly web applications. Proven adaptor and self-starter with a career shift mid-pandemic from fine  dining food service. 
                     </p>
                     <p>
-                        I've been a tinkerer from my preschool legos to zoob in middle school to my desktop computer and commuter bike today. While I've always worked with my hands, I am confident in my problem solving and am ready for the next adventure.
+                        Effective under pressure and recognized by former teams and mentors for attention  to detail. Seeking to further my skills and accelerate my growth in a larger team under the guidance of  some seniors. 
                     </p>
                     <h3 className='mb-3'>My Links:</h3>
                     <Row>
@@ -177,7 +177,7 @@ const Summary = () => {
                             <p>LinkedIn</p>
                         </Col>
                         <Col>
-                            <a href='https://docs.google.com/document/d/1xWioPgge6F38XN11XvWhQMmDjfyxrKpTllZCe50FaeE/edit?usp=sharing' target='_blank' rel='noreferrer'><i className='far fa-file' style={{ 'fontSize': '48px' }} /></a>
+                            <a href='https://docs.google.com/document/d/1JALpuDHvtRTsy8vqZYj__83cFdaOiazraiPTx8Vt9is/edit?usp=sharing' target='_blank' rel='noreferrer'><i className='far fa-file' style={{ 'fontSize': '48px' }} /></a>
                             <p>Résumé</p>
                         </Col>
                     </Row>
