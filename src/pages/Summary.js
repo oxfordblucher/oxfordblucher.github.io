@@ -157,10 +157,10 @@ const Summary = () => {
                 <Col med={12} lg={4} className='text-center'>
                     <h1>About Me</h1>
                     <p>
-                        Motivated full stack software engineer with a passion for delivering efficient, well-documented code and user friendly web applications. Proven adaptor and self-starter with a career shift mid-pandemic from fine  dining food service. 
+                        Experienced full stack software engineer with a strong foundation in building efficient, well-documented code and user friendly web applications. I transitioned to tech during the pandemic, demonstrating resilience, adaptiveness and a drive for continuous learning.
                     </p>
                     <p>
-                        Effective under pressure and recognized by former teams and mentors for attention  to detail. Seeking to further my skills and accelerate my growth in a larger team under the guidance of  some seniors. 
+                        With a keen eye for detail and a cool head under pressure, I have earned recognition from peers and mentors alike. Now, I am eager to deepen my expertise in a collaborative environment, contributing to impactful projects while learning from seasoned engineers.
                     </p>
                     <h3 className='mb-3'>My Links:</h3>
                     <Row>
