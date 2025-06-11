@@ -177,7 +177,7 @@ const Summary = () => {
                             <p>LinkedIn</p>
                         </Col>
                         <Col>
-                            <a href='https://docs.google.com/document/d/1JALpuDHvtRTsy8vqZYj__83cFdaOiazraiPTx8Vt9is/edit?usp=sharing' target='_blank' rel='noreferrer'><i className='far fa-file' style={{ 'fontSize': '48px' }} /></a>
+                            <a href='https://docs.google.com/document/d/1e0uIEDWFPoMODu6SYn9dOuttibkvN2jp/edit?usp=sharing&ouid=107190061829925242342&rtpof=true&sd=true' target='_blank' rel='noreferrer'><i className='far fa-file' style={{ 'fontSize': '48px' }} /></a>
                             <p>Résumé</p>
                         </Col>
                     </Row>
