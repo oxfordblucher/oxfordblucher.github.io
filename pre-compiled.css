@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+h1 {
+    @apply text-3xl;
+}
+
+h2 {
+    @apply text-2xl text-center mb-4;
+}
+
+p, ul {
+    @apply mb-4;
+}
+
+ul li {
+    @apply mb-2;
+}
+
+h3 {
+    @apply text-xl mb-3;
+}
+
+#skills h3 {
+    @apply underline;
+}
