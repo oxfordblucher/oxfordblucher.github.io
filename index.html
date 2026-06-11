@@ -6,40 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header class="mb-4">
-        <div class="max-w-5xl w-4/5 mx-auto flex items-center justify-between flex-wrap">
+        <div class="max-w-4xl w-4/5 pt-4 mx-auto flex items-center justify-between flex-wrap">
             <h1>Hiu Chan | Full Stack Developer</h1>
-            <nav class="gap-2 h-fit flex">
+            <nav class="gap-3 h-fit flex">
                 <a href="#skills">Skills</a>
                 <a href="#exp">Experience</a>
                 <a href="#certs">Certificates</a>
-                <a href="#proj">Projects</a>
+                <!-- <a href="#proj">Projects</a> -->
             </nav>
         </div>
     </header>
 
-    <main class="max-w-5xl w-4/5 mx-auto">
-        <section id="bio">
-            <h2>About Me</h2>
-            <p>
-                Adaptable and self-motivated full-stack software developer with 5+ years of experience,
-                eager to contribute to innovative projects and exceed expectations.
-                Proven ability to quickly learn and apply new technologies,
-                demonstrated by successfully delivering an iOS app ahead of schedule despite no prior SwiftUI
-                experience.
-                Strong communication and collaboration skills honed through client interactions and cross-functional
-                teamwork.
-                Committed to continuous learning and professional growth,
-                seeking a challenging role where I can leverage my skills and passion to create impactful solutions.
-            </p>
+    <main class="max-w-4xl w-4/5 mt-10 mx-auto">
+        <section id="bio" class="flex flex-wrap md:flex-nowrap gap-6">
+            <figure class="basis-full md:basis-1/2 shrink">
+                <img src="IMG_1547.jpeg" alt="pet cat duo on stairwell"/>
+            </figure>
+            <article class="basis-full md:basis-1/2 shrink">
+                <h2>About Me</h2>
+                <p>
+                    Adaptable and self-motivated full-stack software developer with 5+ years of experience,
+                    eager to contribute to innovative projects and exceed expectations.
+                    Proven ability to quickly learn and apply new technologies,
+                    demonstrated by successfully delivering an iOS app ahead of schedule despite no prior SwiftUI
+                    experience.
+                    Strong communication and collaboration skills honed through client interactions and cross-functional
+                    teamwork.
+                    Committed to continuous learning and professional growth,
+                    seeking a challenging role where I can leverage my skills and passion to create impactful solutions.
+                </p>
+            </article>
         </section>
         <section id="skills">
             <h2>Skillset</h2>
-            <section class="flex flex-wrap md:flex-nowrap *:basis-1/3 gap-4">
-                <section>
+            <section class="flex flex-wrap md:flex-nowrap gap-4">
+                <section class="grow basis-full md:basis-1/3">
                     <h3>Front-End</h3>
                     <ul>
                         <li>ReactJS, SolidJS</li>
@@ -48,7 +58,7 @@
                         <li>AppKit/SwiftUI</li>
                     </ul>
                 </section>
-                <section>
+                <section class="grow basis-full md:basis-1/3">
                     <h3>Back-End</h3>
                     <ul>
                         <li>PHP, Node.js, Python</li>
@@ -57,7 +67,7 @@
                         <li>GCP, Cloudflare R2</li>
                     </ul>
                 </section>
-                <section>
+                <section class="grow basis-full md:basis-1/3">
                     <h3>Workflow/Dev-Ops</h3>
                     <ul>
                         <li>Git, Github Actions</li>
@@ -116,43 +126,89 @@
                     </p>
                 </header>
                 <p>
-                    Provided expert debugging and enhancement services for WordPress websites, including WooCommerce and Shopify integrations. 
-                    Optimized website performance and resolved complex issues, ensuring seamless user experiences and client satisfaction.
+                    Provided expert debugging and enhancement services for WordPress websites, including WooCommerce and
+                    Shopify integrations.
+                    Optimized website performance and resolved complex issues, ensuring seamless user experiences and
+                    client satisfaction.
                 </p>
                 <ul class="list-disc list-inside pl-4 leading-normal">
                     <li>
-                        Achieved 90%+ scores on Pingdom/GTMetrix across the board for client websites, resulting in increased traffic and improved user experience.
+                        Achieved 90%+ scores on Pingdom/GTMetrix across the board for client websites, resulting in
+                        increased traffic and improved user experience.
                     </li>
                     <li>
-                        Increased sales fulfillment speed by an average of 50% via creating an intuitive dashboard, resulting in higher customer satisfaction and repeat business.
+                        Increased sales fulfillment speed by an average of 50% via creating an intuitive dashboard,
+                        resulting in higher customer satisfaction and repeat business.
                     </li>
                 </ul>
             </article>
             <article>
                 <header>
                     <h3>Volunteer — Code for Philly</h3>
-                    <p><span>Philadelphia, PA</span><span>May 2022 - July 2023, January 2026 - Present</span></p>
+                    <p>
+                        <span>Philadelphia, PA</span>
+                        <span>May 2022 - July 2023, January 2026 - Present</span>
+                    </p>
                 </header>
                 <p>
-                    Contributed to the front-end development of two single-page applications: One using Material UI, React, and Redux to map various resources across Philadelphia. 
-                    The other using DMN, SolidJS, and Quarkus for a form building tool for assessing a person's eligibility for public benefits.
-                    Collaborated with a team of developers to improve UI/UX consistency, resulting in a more intuitive and responsive user experience.
+                    Contributed to the front-end development of two single-page applications: One using Material UI,
+                    React, and Redux to map various resources across Philadelphia.
+                    The other using DMN, SolidJS, and Quarkus for a form building tool for assessing a person's
+                    eligibility for public benefits.
+                    Collaborated with a team of developers to improve UI/UX consistency, resulting in a more intuitive
+                    and responsive user experience.
                 </p>
                 <ul class="list-disc list-inside pl-4 leading-normal">
                     <li>
-                        Enhanced the front-end of single-page web apps, contributing to a more intuitive and responsive user experience, benefiting the Philadelphia community by providing easier access to essential resources.
+                        Enhanced the front-end of single-page web apps, contributing to a more intuitive and responsive
+                        user experience, benefiting the Philadelphia community by providing easier access to essential
+                        resources.
+                    </li>
+                </ul>
+            </article>
+            <article>
+                <header>
+                    <h3>PHP Intern — OneClick.chat</h3>
+                    <p>
+                        <span>Philadelphia, PA</span>
+                        <span>May 2019 - Nov 2019</span>
+                    </p>
+                </header>
+                <p>
+                    Gained hands-on experience in a startup environment, contributing to the development of a LEMP
+                    stack-based application.
+                    Collaborated with experienced developers, learning industry best practices and expanding technical
+                    skill set.
+                </p>
+                <ul class="list-disc list-inside pl-4 leading-normal">
+                    <li>
+                        Contributed to a LEMP stack application in a fast-paced startup environment,
+                        learning industry best practices alongside senior developers and expanding full-stack technical
+                        skill sets.
                     </li>
                 </ul>
             </article>
         </section>
 
         <section id="certs">
-
+            <h2>Certificates</h2>
+            <article>
+                <h3>Creative Strategist Certificate, 2026</h3>
+                <p>Motion</p>
+            </article>
+            <article>
+                <h3>Associate Cloud Engineer, 2025</h3>
+                <p>Google Cloud Platform</p>
+            </article>
+            <article>
+                <h3>Full Stack Web Development, 2021</h3>
+                <p>University of Pennsylvania LPS</p>
+            </article>
         </section>
 
-        <section id="proj">
-
-        </section>
+        <!-- <section id="proj">
+            <h2>Projects</h2>
+        </section> -->
     </main>
 
 </body>
