@@ -6,7 +6,7 @@ body {
 }
 
 h1, h2, h3, h4 {
-    @apply font-semibold;
+    @apply font-bold;
     font-family: "Lato", sans-serif;
 }
 
@@ -35,9 +35,130 @@ h3 {
 }
 
 #exp article header p {
-    @apply flex justify-between;
+    @apply flex justify-between font-bold;
 }
 
-#certs article {
-    @apply flex items-center justify-between;
+th {
+    @apply text-blue-900 text-lg text-left;
+}
+
+main > section {
+    @apply mb-6;
+}
+
+@variant max-sm {
+
+    #exp article header p {
+        @apply flex-wrap;
+
+        span {
+            @apply w-full;
+        }
+    }
+
+    table,
+    tbody {
+        @apply block w-full;
+    }
+
+    thead {
+        @apply hidden;
+    }
+
+    tr,
+    td {
+        @apply block p-0 text-left whitespace-normal;
+    }
+
+    th[data-title]:before,
+    td[data-title]:before {
+        content: attr(data-title) ":\00A0";
+        @apply font-bold;
+    }
+
+    tr {
+        @apply pb-2 mb-2;
+    }
+
+}
+
+:root {
+    --color-bg: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+        --color-bg: #0F172A;
+        --color-gray-800: #F3F4F6;
+        --color-blue-900: #93C5FD;
+    }
+}
+
+:root[data-theme="dark"] {
+    --color-bg: #0F172A;
+    --color-gray-800: #F3F4F6;
+    --color-blue-900: #93C5FD;
+}
+
+body {
+    background-color: var(--color-bg);
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+body > header {
+    background-color: var(--color-bg);
+}
+
+main > section:not(last-child) {
+    @apply scroll-mt-28;
+}
+
+a:focus-visible {
+    @apply rounded;
+    outline: 2px solid var(--color-blue-900);
+    outline-offset: 2px;
+}
+
+nav a:hover,
+nav a:focus-visible {
+    @apply underline;
+}
+
+nav a[aria-current="true"] {
+    @apply font-bold underline;
+}
+
+.theme-toggle {
+    @apply border border-blue-900 text-blue-900 rounded px-2 py-1 cursor-pointer bg-transparent text-base;
+    line-height: 1;
+    transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus-visible {
+    @apply bg-blue-900;
+    color: var(--color-bg);
+}
+
+#bio figure img {
+    aspect-ratio: 4 / 3;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(1rem);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
 }
