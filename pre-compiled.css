@@ -91,6 +91,10 @@ main > section {
         --color-bg: #0F172A;
         --color-gray-800: #F3F4F6;
         --color-blue-900: #93C5FD;
+
+        body > header {
+            @apply shadow-black;
+        }
     }
 }
 
@@ -98,6 +102,10 @@ main > section {
     --color-bg: #0F172A;
     --color-gray-800: #F3F4F6;
     --color-blue-900: #93C5FD;
+
+    body > header {
+        @apply shadow-black;
+    }
 }
 
 body {
